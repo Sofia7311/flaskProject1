@@ -6,7 +6,7 @@ app.config['DEBUG'] = True
 def home():
     return render_template('home.html')
 
-
+#pass html for output page
 @app.route('/', methods=['POST'])
 def getvalue():
     user_input_number = request.form['inputNumber']
